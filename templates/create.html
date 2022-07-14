@@ -1,0 +1,19 @@
+{{define "form_page"}}
+{{template "header"}}
+<main class="px-3">
+    <h1>{{ .Name }}</h1>
+    <p class="lead">{{ .Desc }}</p>
+    <form action="" method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="имя"><br />
+            <input type="text" class="form-control" placeholder="фамилия"><br />
+            <input type="email" class="form-control" placeholder="email"><br />
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="отправить">
+
+    </form>
+
+</main>
+{{template "footer"}}
+{{end}}
