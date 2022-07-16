@@ -1,7 +1,6 @@
 {{define "contacts_page"}}
-{{template "header"}}
+{{template "header" .}}
 <main class="px-3">
-    
     <h1>{{ .Name }}</h1>
     <p class="lead">{{ .Desc }}</p>
     <p class="lead">
@@ -9,5 +8,5 @@
     </p>
 
 </main>
-{{template "footer"}}
+{{template "footer" .}}
 {{end}}
